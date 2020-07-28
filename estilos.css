@@ -1,0 +1,52 @@
+body {
+    background-image: url("fondo.jpeg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 10;
+   }
+
+
+
+form {
+
+    width: 450px;
+    margin: auto;
+    padding: 20px 80px;
+    box-sizing: border-box;
+    background: rgba(253,221,202,0.6);
+    border-radius: 10px;
+}
+
+h1 {
+
+    color:rgb(63, 42, 11);
+
+
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+#flexbox { 
+    display: flexbox;
+    box-orient: horizontal;
+    background-color: chartreuse;
+    width: auto;
+      height: 40px;
+      border: 1px solid #555;
+      font: 14px Arial;
+    
+  }
+
+@media (max-width:450px){
+    form{
+
+        width: 100%;
+    }
+}

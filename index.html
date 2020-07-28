@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuanta-vida-cuesta¿?</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <h1 style="font-size: 40px;" align=center ><strong>¿Cuanta vida Cuesta ?</strong></h1>
+    
+    <form action="" id="form" method="GET" >
+        
+        <label for="sueldo" style="color: brown; font-size: 20px;">Ingrese Su Sueldo Bruto en ARS $ </label>
+        <input  id="sueldo_bruto" name="sueldo"   type="number"  min="1" required placeholder="Sueldo Bruto" >  
+        <br>
+        <br>
+        <label for="sindicato" style="color: brown; font-size: 20px;">Ingrese Su Descuento Por Sindicato</label>
+        <input name="sindicato" id="sindicato" type="number" min="0" max="10" required placeholder="% Del Sindicato 0 A 10 ">
+        <br>
+        <br>
+        <label for="producto" style="color: brown; font-size: 20px;">Ingrese El Precio Del Producto o Servicio</label>
+        <input name="producto" id="producto" type="number" min="1" required placeholder="$ Del Producto">
+        <br>
+        <br>
+        <label for="horas" style="color: brown; font-size: 20px;" >Ingrese  La Cantidad De Horas Que Trabaja Al Dia </label>
+        <input name="horas" id="horas" type="number"  min="1" max="24" required placeholder="Horas al Dia ">
+        <p>cuesta un total de horas de vida</p>
+        <br> 
+        <div id="flexbox">
+            <p id="resultado"></p>
+          </div>
+        <br>
+        <button type="button" id="btn1" onclick="iniciar()" style="color: chocolate; font-size: 20px; cursor: pointer;">Calcular</button>
+        <button type="submit" id="btn2" onclick="resetear()" style="color: rgb(223, 44, 20); font-size: 20px; cursor: pointer;">Reset</button>
+    </form>
+    <script src="codigo.js"></script>
+</body>
+</html>
